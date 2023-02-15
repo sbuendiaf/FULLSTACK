@@ -1,0 +1,22 @@
+
+/* UTILIZAREMOS BODY O * PARA DAR ESTILO AL FONDO DE LA PÁGINA*/
+
+h1 {
+    color: blue;
+    text-align: center;
+    /* INDICAREMOS DONDE NOS ALINEARA EL TEXTO*/
+    background-color: #F76666;
+    margin: 200px 200px 0px 0px;
+            /* INDICAREMOS UN MARGEN ARRIBA Y A LA DERECHA*/
+    
+    padding-top: 500px;
+    padding-bottom: 500px;
+
+}
+
+h2 {
+    color: black;
+    padding: 100px;
+    margin:100px;
+    background-color: yellowgreen;
+}

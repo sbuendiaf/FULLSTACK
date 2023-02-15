@@ -1,0 +1,373 @@
+<!DOCTYPE html> <!--ES HTML5 PERO A PARTIR LA ULTIMA VERSIÓN YA NO SE PONE NÚMERO-->
+<html lang="es"> <!--IDIOMA QUE SE UTILIZARÁ EN LA PÁGINA
+ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS ACCIONES-->
+
+<head>
+    <!--ETIQUETAS LO QUE LE NAVEGADOR TIENE QUE ENTENDER
+     EL HEAD ES LO QUE NO SE VE, ES SOLO PARA EL NAVEGADOR
+    -->
+    <meta charset="UTF-8"><!--ES PARA QUE PODAMOS UTILIZAR CARACTERES ESPECIALES, TILDES, Ñ, ETC-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullStack</title> <!--TITULO DEL SITIO, IMPORTANTE PARA EL SEO, PARA POSTERIORMENTE EL POSICIONAMIENTO
+    PARA HABRIR LIVE SERVER PULSAMOS BOTON DERECHO SOBRE EL INDEX-->
+
+    <!-- ESTO ES UNA MALA PRACTICAS 
+    <style>
+        h1 {
+        color:blue;
+        }
+        h2 {
+            color:green;
+        }
+    </style>
+    -->
+    <link rel="reload" href="/css/stile.css" as="style">
+    <!--DICE AL NAVEGADOR QUE REALICE UNA PRECARGA (ES UNA BUENA PRACTICA PARA EVITAR FALLOS VISUALES)-->
+
+    <link href="/css/stile.css" rel="stylesheet">
+    <!-- HREF INDICAREMOS LA DIRECCIÓN DEL ARCHIVO DE ESTILOS DE CSS
+    REL NOS INDICARA LA RELACIÓN CON LA HOJA O FUNCIÓN QUE REALIZAR
+    AS: INDICA AL NAVEGADOR QUE ES EL ESTILO
+    -->
+</head>
+
+<!--A PARTIR DE AQUI INTRODUCIREMOS TODO LO QUE VEREMOS EN LA PÁGINA WEB-->
+
+<body>
+    <header>
+        <!--ES EL TÍTULO PRINCIPAL DE LA PÁGINA LO QUE SIEMPRE ESTARÁ ARRIBA-->
+
+
+        <nav>
+            <a href="#">
+                <!--ESTO INTRODUCE UN ENLACE Y EN LA URL INTRODUCIREMOS EL DESTINO
+                "href" ES UN ATRIBUTO DE "a"
+                 -->
+
+                Login Alumnos
+            </a>
+            <a href="#">
+                Login Empresas
+            </a>
+        </nav>
+
+        <nav>
+            <a href="#">
+                <img src="/img/Tu-carrera-digital-general.png">
+            </a>
+            <a href="#">
+                <!--ESTO INTRODUCE UN ENLACE Y EN LA URL INTRODUCIREMOS EL DESTINO
+                "href" ES UN ATRIBUTO DE "a"
+                 -->
+
+                Cursos
+            </a>
+            <a href="#">
+                Sobre nosotros
+            </a>
+            <a href="#">
+                Informate
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <!--INDICAMO QUE ESTO ES LO MÁS IMPORTANTE DE NUESTRO BODY-->
+        <h1>
+            Descubre la formación que te dará la oportunidad de convertirte en un profesional
+        </h1>
+
+        <!--
+            ES UN ARVHIVO VECTORIAL (ICONO) QUE NO PIERDE RESOLUCIÓN. SE PUEDE SACAR DE UNA PÁGINA WEB
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera-selfie" width="100" height="100" viewBox="0 0 24 24" stroke-width="0.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+            <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
+            <line x1="15" y1="11" x2="15.01" y2="11" />
+            <line x1="9" y1="11" x2="9.01" y2="11" />
+          </svg>
+        -->
+
+        <img src="/img/11641893944_banner_zona_centro.png">
+        <!--INTRODUCIMOS UNA IMAGEN DESDE NUESTRA CARPETA. COMPROVAR QUE LA RUTA MARCA BIEN LAS CARPETAS
+        AL INTRODUCIR .. INDICAMOS QUE BUSQUE UN NIVEL ANTERIOR-->
+        <a hreflang="#">
+            VER CURSOS
+        </a>
+    </main>
+    <section>
+        <div>
+            <!--ENGLOBAMOS LAS DOS IMAGENES EN UN MISMO GRUPO Y DESPUES LAS INDIVIDUALIZAMOS PARA FACILITAR SU EDICIÓN-->
+            <div>
+                <img src="/img/Logos-oficiales.png">
+            </div>
+            <div>
+                <img src="/img/Logo-Adecco.png">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!--INDICAMOS AQUÍ QUE ESTO ES UNA PARTE DE NUESTRO BODY. SIRVE PARA AGRUPAR -->
+        <h3>
+            CURSOS
+        </h3>
+        <h2>
+            CAMBIA TU FUTURO
+        </h2>
+    </section>
+
+    <section>
+        <div>
+            <!--CREAMOS SUBSECCIONES PARA AGRUPAR COMPONENTES Y FACILITAR TANTO EDICIÓN COMO FACILITAR LA VISUALIZACIÓN-->
+            <a href="#">
+                VER TODO
+            </a>
+            <a href="#">
+                ALCOBENDAS Y LA MORALEJA
+            </a>
+            <a href="#">
+                CARBAJOSA DE LA SAGRADA
+            </a>
+            <a href="#">
+                MADRID
+            </a>
+            <a href="#">
+                POZUELO DE ALARCÓN
+            </a>
+
+        </div>
+        <div>
+            <h2>
+                MARKETING DIGITAL
+            </h2>
+            <a href="#">
+                INSCRIBIRME
+            </a>
+        </div>
+        <div>
+            <h2>
+                PROGRAMACIÓN DE VIDEOJUEGOS, DISEÑO 3D Y REALIDAD VIRTUAL
+            </h2>
+            <a href="#">
+                INSCRIBIRME
+            </a>
+        </div>
+        <div>
+            <h2>
+                PROGRAMACIÓN WEB FULL STACK
+            </h2>
+            <a href="#">
+                INSCRIBIRME
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h3>
+            ¿TE INTERESA ALGÚN OTRO CURSO EN TU CIUDAD?
+        </h3>
+        <a href="#">
+            ¡PÍDENOSLO!
+        </a>
+    </section>
+
+    <section>
+        <h3>
+            ¿PARA QUIEN SON ESTOS CURSOS?
+        </h3>
+        <h2>
+            Si quieres dar un giro a tu carrera profesional y formarte en profesiones digitales con futuro, este es tu
+            lugar.
+        </h2>
+        <p>
+            Cuando eliges un curso en Tu Carrera Digital, estás dando el paso definitivo hacia las profesiones con más
+            demanda del momento, como Marketing Digital, Desarrollo Web Full Stack y Programación de Videojuegos, Diseño
+            3D
+            y Realidad Virtual. Nosotros te ofrecemos formación con docentes expertos y contenidos alineados a las
+            necesidades de las empresas. Queremos que saques el máximo partido a estos cursos y que potencies tus
+            posibilidades de encontrar un empleo.
+        </p>
+        <h4>
+            PARA PARTICIPAR, NECESITARÁS ESTAR INSCRITO EN GARANTÍA JUVENIL
+        </h4>
+        <a href="#">
+            IR A LA WEB DE GARANTÍA JUVENIL
+        </a>
+        <p>
+            Descárgate esta infografía en la que te mostramos cómo descargar tu certificado de Garantía Juvenil:
+        </p>
+        <a href="#">
+            DESCARGAR INFOGRAFÍA ADJUNTAR
+        </a>
+        <a href="#">
+            <!--ESTO SERA UNA IMAGEN CON ENLACE-->
+            <img src="/img/21643022702_cta_para_quien_centro.png">
+        </a>
+    </section>
+
+    <section>
+
+        <h2>
+            LOCALIZACIONES:
+        </h2>
+        <h3>
+            Madrid
+        </h3>
+        <p>
+            AVENIDA MANOTERAS 32 28050, MADRID, MADRID.
+        </p>
+        <h3>
+            POZUELO DE ALARCÓN
+        </h3>
+        <p>
+            CALLE SAN JUAN DE LA CRUZ 2 28223, MADRID, MADRID.
+        </p>
+        <h3>
+            MADRID
+        </h3>
+        <p>
+            CALLE SAN SOTERO 3 PLANTA 3ª AULA 31 28037, MADRID, MADRID.
+        </p>
+        <h3>
+            CARBAJOSA DE LA SAGRADA
+        </h3>
+        <p>
+            CALLE SEGUNDA 43 37188, CASTILLA LEÓN, SALAMANCA.
+        </p>
+        <h3>
+            ALCOBENDAS Y LA MORALEJA
+        </h3>
+        <p>
+            CALLE SORIA 43 28100, MADRID, MADRID.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h3>
+            CONTACTAR
+        </h3>
+        <h2>
+            ¿TIENES DUDAS? HABLA CON NOSOTROS:
+        </h2>
+        <div>
+            <img src="/img/ico-TLF.png">
+            <p>
+                LLÁMANOS:
+                <a href="#">
+                    638024408
+                    <!--DENTRO DEL TEXTO CREAMO UN ENLACE AL NÚMERO QUE POSTERIORMENTE TENDRÁ UN NIVEL ANTERIOR CON OTRA FUNCIÓN-->
+                </a>
+            </p>
+        </div>
+        <div>
+            <img src="/img/ico-EMAIL.png">
+            <p>
+                ESCRÍBENOS:
+
+                <a href="#"> patric.departearroyo@adecco.com </a>
+            </p>
+        </div>
+
+    </section>
+
+    <!--LO QUE VA A VER EL USUARIO FINAL
+    <p>
+        
+        P ETIQUETA DE PARRAFO
+        H1 ES UN TÍTULO Y SOLO PODRÁ HABER 1 EN LA PÁGINA
+        H2,H3... PUEDE HABER MÁS
+        CADA UNO DE ELLOS ES UNA SECCIÓN NUEVA
+    
+        Hola mundo
+    </p>
+    
+        TENEMOS QUE SER MUY ORDENADO Y ETIQUETAR INICIO Y FIN EN DIFERENTES PARRAFOS PARA FACILITAR VISUALMENTE 
+        EL CONTENIDO QUE ESTAMOS REALIZANDO
+
+    -->
+
+    <form>
+        <fieldset>
+            <legend>
+                FORMULARIO DE TU CARRERA DIGITAL
+            </legend>
+            <legend>
+                Los campos marcados * son obligatorios
+            </legend>
+            <div>
+                <label>
+                    NOMBRE*
+                </label>
+                <input type="text" placeholder="Nombre">
+                <label>
+                    APELLIDOS*
+                </label>
+                <input type="text" placeholder="Apellido">
+            </div>
+            <div>
+                <label>
+                    EMAIL*
+                </label>
+                <input type="text" placeholder="Email">
+            </div>
+            <div>
+                <label>
+                    MENSAJE
+                </label>
+                <textarea type="text" placeholder="En que podemos ayudarle"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+
+
+        </fieldset>
+    </form>
+
+    <footer>
+        <div>
+
+            <div>
+
+                <div>
+                    <h3>
+                        CURSOS ZONA-CENTRO
+                    </h3>
+                </div>
+                <div>
+                    <p>
+                        SOBRE NOSOTROS
+                    </p>
+                </div>
+
+            </div>
+
+            <div>
+
+                <div>
+                    <p>
+                        Preguntas frecuente (FAQ)
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <a href="#">
+        <img src="/img/ico-informate.png">
+    </a>
+</body>
+
+
+
+</html>
