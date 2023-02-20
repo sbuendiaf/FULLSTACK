@@ -1,9 +1,14 @@
 
+html{
+    font-size: 62.5%;
+}
+
 body{
 font-family: 'Open Sans', sans-serif;
 font-weight: 400;
 color: #02052F;
 text-align: left;
+font-size: 16px;
 
 }
 
@@ -26,10 +31,13 @@ a{
     text-decoration: none;
     /* LE INDICO QUE EN LOS ENLACES NO QUIERO DECORACION COMO EL SUBRAYADO */
 }
-
+.contenedor{
+    width: 114rem;
+    /* DETERMINAMOS EL ANCHO DE LA PAGINA */
+    margin: 0 auto;
+}
 .pagina{
     /*ESTA FORMA NOS DARA EL FORMATO GENERAL DE LA ESTRUCTURA DE LA PAGINA DELIMITAN LOS MARGENES*/
-    width: 100%;
     /*ESTABLECE QUE LA PAGINA OCUPARA EL 100% DE LA PANTALLA*/
     padding-right: 15px;
     padding-left: 15px;
