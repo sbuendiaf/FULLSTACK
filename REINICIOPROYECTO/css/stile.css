@@ -4,11 +4,11 @@ html{
 }
 
 body{
-font-family: 'Open Sans', sans-serif;
-font-weight: 400;
-color: #02052F;
-text-align: left;
-font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #02052F;
+    text-align: left;
+    font-size: 16px;
 
 }
 
@@ -17,6 +17,16 @@ nav{
     padding-top: 15px;
     padding-bottom: 10px;
 
+}
+h1 {
+    font-family: "DinBold", sans-serif;
+    color: white;
+    background-color: rgba(248, 102, 102, 0.65);
+    text-align: left;
+    /* INDICAREMOS DONDE NOS ALINEARA EL TEXTO*/
+    padding: 35px;
+    display: block;
+    font-size: 45px;
 }
 
 div{
@@ -35,6 +45,7 @@ a{
     width: 114rem;
     /* DETERMINAMOS EL ANCHO DE LA PAGINA */
     margin: 0 auto;
+    
 }
 .pagina{
     /*ESTA FORMA NOS DARA EL FORMATO GENERAL DE LA ESTRUCTURA DE LA PAGINA DELIMITAN LOS MARGENES*/
@@ -45,7 +56,12 @@ a{
     margin-left: auto;
 
 }
-
+.navprincipal{
+    padding: 15px 0 10px;
+}
+.elbarra{
+    margin: 0;
+}
 .alineado{
     /*NOS PERMITE ENCUADRAR EL TEXTO*/
     padding-right: -15px;
@@ -55,40 +71,108 @@ a{
 }
 .inline{
     display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin: 0;
 }
 .general{
 
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+   
     
 }
+
 .derecha{
     /* text-align: right !important; */
     /*ESTAMOS INDICANDO QUE ESTA CARACTERISTICA PREDOMINA SOBRE EL RESTO*/
     display: flex;
     flex-wrap: wrap;
-    /* EN EL ELEMENTO QUE TRABAJAMOS */
+    /* EN EL ELEMENTO QUE TRABAJAMOS DECIMOS QUE CUANDO NO QUEPA EL ELEMENTO EN EL ANCHO DE PÁGINA NOS LO PASE A LA SIGUIENTE LINEA */
+    flex: 0 0 100%;
+    /*LE ESTAMOS INDICANDO QUE EL DIV NOS COJA EL 100% DEL ANCHO DE LA PÁGINA*/
+    flex-wrap: 100%;
     justify-content: flex-end;
     /* JUSTIFICAMOS EL CONTENIDO AL FINAL DEL FLEX */
     align-items: center;
     /* NOS ALINEA EL CONTENIDO EN EL CENTRO DEL ESPACIO DEL ESPACIO CONTENEDOR VERTICALMENTE */
+    
 }
+.colxl-4{
+    flex: 33.3%;
+    max-width: 33.3%;
+}
+.colxl-8{
+    flex: 66.6%;
+    max-width: 66.6%;
+}
+/*COL LO UTILIZAMOS PARA DETERMINAR QUE PORCENTAJE DEL ESPACIO COPUPA UN DETERMINADO ELEMENTO*/
 
 .imgcarrera{
    display: block;
+   
 }
 .tucarrera{
     box-sizing: border-box;
-    
 }
 .menusec{
-    box-sizing: border-box;
+    
+    padding-top: 1rem;
+    
     
 }
 .lista{
-    margin: 1%
+    margin: 0 8px;
+ 
+}
+
+
+.botones{
+    font-family: "DinBold", sans-serif;
+    color: #fff;
+    border: 2px solid #000;
+    background: #000 url(/img/ico-flecha-derecha-white.png)no-repeat right 20px center;
+    /* CON LO INDICADO DESPUES DE LA URL LE ESTAMOS DICIENDO QUE NO SE REPITA LA IMAGEN (AL SER PEQUENA) Y QUE NOS LO COLOQUE A LA DERECHA CENTRADO Y EL TAMANO*/ 
+    font-weight: 700;
+    font-size: 14px;
+    padding: 24px 94px;
+    text-decoration: none;/* ESTAMOS INDICANDO QUE NO QUEREMOS DECORACION COMO EN ESTE CASO QUE ESTE SUBRALLADO POR SER UN ENLACE*/
+    display: inline-block; /*EN ESTE CASO ESTAMOS INDICADO QUE LA CLASE  ACTUE COMO BLOQUE??*/
+    float: right;
+}
+.localizaciones{
+    background-color: #000;
+    color: #fff;
+    padding: 5rem 0;
+    
+}
+.loc{
+    padding-bottom: 3rem;
+}
+
+.loc2{
+    display: flex;
+}
+.direccion{
+    padding: 0 10px;
+}
+.center{
+    text-align: center;
+}
+.imgred{
+    align-items: center;
+}
+.fondoimg{
+    background-image: url(/img/11641893944_banner_zona_centro.png);
+
+
+}
+.encuadre1{
+    padding: 5rem 45rem 10rem 0rem; 
+    
+}
+.displayflex{
+    display: flex;
+    flex-wrap: wrap;
+    /**/
 }
