@@ -1,0 +1,86 @@
+
+body{
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+color: #02052F;
+text-align: left;
+
+}
+
+nav{
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+}
+
+div{
+    display: block;
+}
+
+img{
+    border-style: none;
+    
+}
+a{
+    text-decoration: none;
+    /* LE INDICO QUE EN LOS ENLACES NO QUIERO DECORACION COMO EL SUBRAYADO */
+}
+
+.pagina{
+    /*ESTA FORMA NOS DARA EL FORMATO GENERAL DE LA ESTRUCTURA DE LA PAGINA DELIMITAN LOS MARGENES*/
+    width: 100%;
+    /*ESTABLECE QUE LA PAGINA OCUPARA EL 100% DE LA PANTALLA*/
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.alineado{
+    /*NOS PERMITE ENCUADRAR EL TEXTO*/
+    padding-right: -15px;
+    padding-left: -15px;
+    /* display: flex; */
+    /* ESTO NOS PERMITE QUE LE CONTENIDO SEA FLEXIBLE Y SE MODIFIQUE SOLO CON EL CONTENIDO */
+}
+.inline{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.general{
+
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+.derecha{
+    /* text-align: right !important; */
+    /*ESTAMOS INDICANDO QUE ESTA CARACTERISTICA PREDOMINA SOBRE EL RESTO*/
+    display: flex;
+    flex-wrap: wrap;
+    /* EN EL ELEMENTO QUE TRABAJAMOS */
+    justify-content: flex-end;
+    /* JUSTIFICAMOS EL CONTENIDO AL FINAL DEL FLEX */
+    align-items: center;
+    /* NOS ALINEA EL CONTENIDO EN EL CENTRO DEL ESPACIO DEL ESPACIO CONTENEDOR VERTICALMENTE */
+}
+
+.imgcarrera{
+   display: block;
+}
+.tucarrera{
+    box-sizing: border-box;
+    
+}
+.menusec{
+    box-sizing: border-box;
+    
+}
+.lista{
+    margin: 1%
+}
