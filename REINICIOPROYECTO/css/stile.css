@@ -1,6 +1,7 @@
 
 html{
     font-size: 62.5%;
+    
 }
 
 body{
@@ -9,13 +10,13 @@ body{
     color: #02052F;
     text-align: left;
     font-size: 16px;
-
+   
 }
 
 nav{
     background-color: #fff;
     padding-top: 15px;
-    padding-bottom: 10px;
+    justify-content: flex-end;
 
 }
 h1 {
@@ -27,6 +28,7 @@ h1 {
     padding: 35px;
     display: block;
     font-size: 45px;
+    
 }
 
 div{
@@ -41,11 +43,17 @@ a{
     text-decoration: none;
     /* LE INDICO QUE EN LOS ENLACES NO QUIERO DECORACION COMO EL SUBRAYADO */
 }
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+}
+.zonacentro{
+    color:#F76666;
+}
 .contenedor{
     width: 114rem;
     /* DETERMINAMOS EL ANCHO DE LA PAGINA */
     margin: 0 auto;
-    
+    padding: 0 auto;
 }
 .pagina{
     /*ESTA FORMA NOS DARA EL FORMATO GENERAL DE LA ESTRUCTURA DE LA PAGINA DELIMITAN LOS MARGENES*/
@@ -62,11 +70,12 @@ a{
 .elbarra{
     margin: 0;
 }
-.alineado{
+.row{
     /*NOS PERMITE ENCUADRAR EL TEXTO*/
     padding-right: -15px;
     padding-left: -15px;
-    /* display: flex; */
+    display: flex; 
+    flex-wrap: wrap;
     /* ESTO NOS PERMITE QUE LE CONTENIDO SEA FLEXIBLE Y SE MODIFIQUE SOLO CON EL CONTENIDO */
 }
 .inline{
@@ -76,7 +85,6 @@ a{
     margin: 0;
 }
 .general{
-
     width: 100%;
     min-height: 1px;
    
@@ -89,7 +97,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     /* EN EL ELEMENTO QUE TRABAJAMOS DECIMOS QUE CUANDO NO QUEPA EL ELEMENTO EN EL ANCHO DE PÁGINA NOS LO PASE A LA SIGUIENTE LINEA */
-    flex: 0 0 100%;
+    flex:100%;
     /*LE ESTAMOS INDICANDO QUE EL DIV NOS COJA EL 100% DEL ANCHO DE LA PÁGINA*/
     flex-wrap: 100%;
     justify-content: flex-end;
@@ -98,27 +106,51 @@ a{
     /* NOS ALINEA EL CONTENIDO EN EL CENTRO DEL ESPACIO DEL ESPACIO CONTENEDOR VERTICALMENTE */
     
 }
+.derecha2{
+    align-items: right !important;
+    
+}
+.colxl-12, .colxl-4, .colxl-8, .colxl-3{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.colxl-12{
+    flex: 100%;
+    max-width: 100%
+    
+}
 .colxl-4{
     flex: 33.3%;
     max-width: 33.3%;
+    
 }
 .colxl-8{
     flex: 66.6%;
     max-width: 66.6%;
+    
+}
+.colxl-3{
+    flex: 25%;
+    max-width: 25%;
 }
 /*COL LO UTILIZAMOS PARA DETERMINAR QUE PORCENTAJE DEL ESPACIO COPUPA UN DETERMINADO ELEMENTO*/
 
 .imgcarrera{
    display: block;
+   padding-top: 17px;
    
 }
 .tucarrera{
     box-sizing: border-box;
 }
 .menusec{
-    
-    padding-top: 1rem;
-    
+    color: #02052F !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     
 }
 .lista{
@@ -126,20 +158,6 @@ a{
  
 }
 
-
-.botones{
-    font-family: "DinBold", sans-serif;
-    color: #fff;
-    border: 2px solid #000;
-    background: #000 url(/img/ico-flecha-derecha-white.png)no-repeat right 20px center;
-    /* CON LO INDICADO DESPUES DE LA URL LE ESTAMOS DICIENDO QUE NO SE REPITA LA IMAGEN (AL SER PEQUENA) Y QUE NOS LO COLOQUE A LA DERECHA CENTRADO Y EL TAMANO*/ 
-    font-weight: 700;
-    font-size: 14px;
-    padding: 24px 94px;
-    text-decoration: none;/* ESTAMOS INDICANDO QUE NO QUEREMOS DECORACION COMO EN ESTE CASO QUE ESTE SUBRALLADO POR SER UN ENLACE*/
-    display: inline-block; /*EN ESTE CASO ESTAMOS INDICADO QUE LA CLASE  ACTUE COMO BLOQUE??*/
-    float: right;
-}
 .localizaciones{
     background-color: #000;
     color: #fff;
@@ -163,13 +181,17 @@ a{
     align-items: center;
 }
 .fondoimg{
-    background-image: url(/img/11641893944_banner_zona_centro.png);
-
-
+    background-image: url(/REINICIOPROYECTO/img/11641893944_banner_zona_centro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*ESTOS DOS COMANDOS NOS PERMITEN DECIRLE QUE NO NOS REPITA LA IMAGEN UNA VEZ LLEGUE A SU TAMAÑO MÁXIMO
+    EL OTRO COMANDO NOS DICE QUE EL CONTENIDO DEL FONDO CUBRA TODA LA PANTALLA*/
+    padding-top: 80px;
+    padding-bottom: 180px;
 }
 .encuadre1{
-    padding: 5rem 45rem 10rem 0rem; 
     
+   
 }
 .displayflex{
     display: flex;

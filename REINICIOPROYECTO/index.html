@@ -12,12 +12,12 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
     <title>FullStack</title> <!--TITULO DEL SITIO, IMPORTANTE PARA EL SEO, PARA POSTERIORMENTE EL POSICIONAMIENTO
     PARA HABRIR LIVE SERVER PULSAMOS BOTON DERECHO SOBRE EL INDEX-->
 
-    <link rel="reload" href="/css/normalize.css" as="style">
-    <link href="/css/normalize.css" rel="stylesheet">
-    <link rel="reload" href="/css/stile.css" as="style">
+    <link rel="reload" href="/REINICIOPROYECTO/css/normalize.css" as="style">
+    <link href="/REINICIOPROYECTO/css/normalize.css" rel="stylesheet">
+    <link rel="reload" href="/REINICIOPROYECTO/css/stile.css" as="style">
     <!--DICE AL NAVEGADOR QUE REALICE UNA PRECARGA (ES UNA BUENA PRACTICA PARA EVITAR FALLOS VISUALES)-->
 
-    <link href="/css/stile.css" rel="stylesheet">
+    <link href="/REINICIOPROYECTO/css/stile.css" rel="stylesheet">
     <!-- HREF INDICAREMOS LA DIRECCIÓN DEL ARCHIVO DE ESTILOS DE CSS
     REL NOS INDICARA LA RELACIÓN CON LA HOJA O FUNCIÓN QUE REALIZAR
     AS: INDICA AL NAVEGADOR QUE ES EL ESTILO
@@ -30,37 +30,38 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
     <nav class="contenedor navprincipal">
         <div class="pagina">
             <!--CREAMOS ESTA DIVISION CON ESTA CLASE PARA DARLE UNA FORMA FIJA A TODO EL CONTENIDO-->
-            <div class="alineado">
+            <div class="row">
                 <!--DENTRO DEL FORMATO ANTERIOR CREAREMOS UN FORMATO PARA EVITAR QUE SE NOS PIERDA INFORMACION VISUALMENTE Y SE CENTRE-->
-                <div class="general prueba">
+                <div class="general prueba zonacentro colxl-12">
                     <div class="derecha">
                         <!--CREAMOS ESTA CLASE PARA ASIGNAR UN ESTILO DE CSS QUE NO ALINIE TODO A LA DERECHA CON IMPORTANCIA-->
-                        <a href="#" class="lista">
+                        <a href="#" class="lista zonacentro">
                             Login Alumnos
                         </a>
                         <p class="elbarra">|</p>
-                        <a href="#" class="lista">
+                        <a href="#" class="lista zonacentro">
                             Login Empresas
                         </a>
                         <!--ASIGNAMOS LA MISMA CLASE PARA EDITAR TEXTO Y COLOR DE IGUAL MANERA-->
                     </div>
                 </div>
                 <!--SUBDIVIDIMOS EN VARIOS APARTADOS PARA FACILITAR LA EDICION Y COLOCACION-->
-                <div class="inline">
+                <div class="inline colxl-12">
+                    <!-- LE DAMOS LA CLASE COLXL-12 PARA INDICARLE QUE ESA DIVISIÓN TENDRÁ EL ANCHO MÁXIMO Y POSTERIOR MENTE A LAS SIGUIENTES DIVISIONES EL % QUE DESEEMOS DE ESE TOTAL -->
                     <div class="general imgcarrera">
                         <a href="#">
-                            <img src="/img/Tu-carrera-digital-general.png" class="tucarrera">
+                            <img src="/REINICIOPROYECTO/img/Tu-carrera-digital-general.png" class="tucarrera">
                         </a>
                     </div>
-                    <div class="general menusec">
-                        <div class="derecha">
-                            <a href="#" class="lista">
+                    <div class="general derecha">
+                        <div class="derecha2">
+                            <a href="#" class="lista menusec">
                                 Cursos
                             </a>
-                            <a href="#" class="lista">
+                            <a href="#" class="lista menusec">
                                 Sobre Nosotros
                             </a>
-                            <a href="#" class="lista">
+                            <a href="#" class="lista menusec">
                                 Informate
                             </a>
                         </div>
@@ -73,15 +74,15 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
 
     <section class="fondoimg">
         <div class="contenedor">
+            <div class="row">
+                <div class="encuadre1 colxl-8">
+                    <h1>
+                        Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
+                    </h1>
+                    <img src="/REINICIOPROYECTO/img/ico-centro.png">
 
-            <div class="encuadre1">
-                <h1>
-                    Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
-                </h1>
-                <img src="/img/ico-centro.png">
-
+                </div>
             </div>
-
         </div>
     </section>
 
@@ -89,10 +90,10 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
         <div>
             <div class="center">
                 <div class="imgred">
-                    <img src="/img/Logos-oficiales.png">
+                    <img src="/REINICIOPROYECTO/img/Logos-oficiales.png">
                 </div>
                 <div class="imgred">
-                    <img src="/img/Logo-Adecco.png">
+                    <img src="/REINICIOPROYECTO/img/Logo-Adecco.png">
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
             </div>
         </div>
         <div class="contenedor loc2">
-            <div class="direccion">
+            <div class="colxl-3">
                 <h3>
                     MADRID
                 </h3>
@@ -115,7 +116,7 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
                     AVENIDA MANOTERAS 32 28050, MADRID, MADRID.
                 </p>
             </div>
-            <div class="direccion">
+            <div class="colxl-3">
                 <h3>
                     MADRID
                 </h3>
@@ -123,7 +124,7 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
                     CALLE SAN SOTERO 3 PLANTA 3ª AULA 31 28037, MADRID, MADRID.
                 </p>
             </div>
-            <div class="direccion">
+            <div class="colxl-3">
                 <h3>
                     CARBAJOSE DE LA SAGRADA
                 </h3>
@@ -131,7 +132,7 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
                     CALLE SEGUNDA 43 37188, CASTILLA LEÓN, SALAMANCA.
                 </p>
             </div>
-            <div class="direccion">
+            <div class="colxl-3">
                 <h3>
                     ALCOBENDAS Y LA MORALEJA
                 </h3>
