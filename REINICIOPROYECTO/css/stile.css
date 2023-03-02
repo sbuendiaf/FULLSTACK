@@ -355,7 +355,7 @@ strong {
     font-family: var(--font-family-sans-serif);
     color: #fff;
     border: 2px solid #000;
-    background: #000 url(/REINICIOPROYECTO/img/ico-flecha-derecha-white.png)no-repeat right 20px center;
+    background: #000 url(/img/ico-flecha-derecha-white.png)no-repeat right 20px center;
     /* CON LO INDICADO DESPUES DE LA URL LE ESTAMOS DICIENDO QUE NO SE REPITA LA IMAGEN (AL SER PEQUENA) Y QUE NOS LO COLOQUE A LA DERECHA CENTRADO Y EL TAMANO*/
     font-weight: 700;
 
@@ -369,7 +369,7 @@ strong {
 
 .botones:hover {
     color: #F76666;
-    background: white url(/PROYECTOINICIO/img/ico-flecha-derecha-red.png) no-repeat right 20px center;
+    background: white url(/img/ico-flecha-derecha-red.png) no-repeat right 20px center;
     border-color: #F76666;
 }
 
@@ -494,7 +494,7 @@ strong {
 
 .fondoimg {
 
-    background-image: url(/REINICIOPROYECTO/img/11641893944_banner_zona_centro.png);
+    background-image: url(/img/11641893944_banner_zona_centro.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -648,7 +648,7 @@ strong {
 
 
 .marketing {
-    background-image: url(/REINICIOPROYECTO/img/Curso-marketing-digital-centro.png);
+    background-image: url(/img/Curso-marketing-digital-centro.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -657,7 +657,7 @@ strong {
 }
 
 .videojuegos {
-    background-image: url(/REINICIOPROYECTO/img/Curso-programacion-videojuegos-centro.png);
+    background-image: url(/img/Curso-programacion-videojuegos-centro.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -666,7 +666,7 @@ strong {
 }
 
 .proweb {
-    background-image: url(/REINICIOPROYECTO/img/Curso-programacion-web-full-stack-centro.png);
+    background-image: url(/img/Curso-programacion-web-full-stack-centro.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -750,7 +750,7 @@ strong {
     margin-left: 10px;
     width: 31px;
     height: 16px;
-    background: url(/REINICIOPROYECTO/img/ico-flecha-derecha-red.png);
+    background: url(/img/ico-flecha-derecha-red.png);
     display: inline-block;
 }
 
