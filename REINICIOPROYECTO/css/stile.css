@@ -68,7 +68,7 @@ h1 {
     font-size: 45px;
     line-height: 1.2;
     /* box-shadow: 10px 10px 15px 1px rgba(107, 103, 107, 1); */
-    /* ESTAMOS INTRODUCIENDO UN SOMBREADO EN LA PARTE DE ATRAS DANDO UN EFECTO 3D */
+    /* ESTAMOS INTRODUCIENDO UN SOMBREADO EN LA PARTE DE ATRÁS DANDO UN EFECTO 3D */
 }
 
 h3 {
@@ -99,7 +99,7 @@ img {
 
 a {
     text-decoration: none;
-    /* LE INDICO QUE EN LOS ENLACES NO QUIERO DECORACION COMO EL SUBRAYADO */
+    /* LE INDICO QUE EN LOS ENLACES NO QUIERO DECORACIÓN COMO EL SUBRAYADO */
     color: black;
 }
 
@@ -132,7 +132,7 @@ strong {
 
 .derecha {
     /* text-align: right !important; */
-    /*ESTAMOS INDICANDO QUE ESTA CARACTERISTICA PREDOMINA SOBRE EL RESTO*/
+    /*ESTAMOS INDICANDO QUE ESTA CARACTERÍSTICA PREDOMINA SOBRE EL RESTO*/
     display: flex;
     flex-wrap: wrap;
     /* EN EL ELEMENTO QUE TRABAJAMOS DECIMOS QUE CUANDO NO QUEPA EL ELEMENTO EN EL ANCHO DE PÁGINA NOS LO PASE A LA SIGUIENTE LINEA */
@@ -151,7 +151,7 @@ strong {
 }
 
 .pagina {
-    /*ESTA FORMA NOS DARA EL FORMATO GENERAL DE LA ESTRUCTURA DE LA PAGINA DELIMITAN LOS MARGENES*/
+    /*ESTA FORMA NOS DARÁ EL FORMATO GENERAL DE LA ESTRUCTURA DE LA PAGINA DELIMITAN LOS MARGENES*/
     /*ESTABLECE QUE LA PAGINA OCUPARA EL 100% DE LA PANTALLA*/
     padding-right: 15px;
     padding-left: 15px;
@@ -238,8 +238,8 @@ strong {
 
     .imgcursos {
         display: grid;
-        /* grid-template-columns: 50% 50%; /* INTRODUCIMOS EL TAMANO DE CADA COLUMNA QUE QUEREMOS DEL ESPACIO GENERAL*/
-        /* grid-template-rows: 300px 300px;INTRODUCIMOS EL TAMANO DE CADA FILA QUE QUEREMOS DE ALTURA*/
+        /* grid-template-columns: 50% 50%; /* INTRODUCIMOS EL TAMAÑO DE CADA COLUMNA QUE QUEREMOS DEL ESPACIO GENERAL*/
+        /* grid-template-rows: 300px 300px;INTRODUCIMOS EL TAMAÑO DE CADA FILA QUE QUEREMOS DE ALTURA*/
         grid: 300px 300px / 1fr 1fr;
         gap: 30px;
 
@@ -270,7 +270,7 @@ strong {
 
 @media (max-width:820px) {
     
-   
+    
     .colsm-12 {
         flex: 100%;
         max-width: 100%
@@ -299,7 +299,7 @@ strong {
         max-width: 100%;
     }
 
-    /*COL LO UTILIZAMOS PARA DETERMINAR QUE PORCENTAJE DEL ESPACIO COPUPA UN DETERMINADO ELEMENTO*/
+    /*COL LO UTILIZAMOS PARA DETERMINAR QUE PORCENTAJE DEL ESPACIO OCUPA UN DETERMINADO ELEMENTO*/
     .loc2 {
         flex-wrap: wrap;
     }
@@ -311,8 +311,8 @@ strong {
 
     .imgcursos {
         display: grid;
-        /* grid-template-columns: 50% 50%; /* INTRODUCIMOS EL TAMANO DE CADA COLUMNA QUE QUEREMOS DEL ESPACIO GENERAL*/
-        /* grid-template-rows: 300px 300px;INTRODUCIMOS EL TAMANO DE CADA FILA QUE QUEREMOS DE ALTURA*/
+        /* grid-template-columns: 50% 50%; /* INTRODUCIMOS EL TAMAÑO DE CADA COLUMNA QUE QUEREMOS DEL ESPACIO GENERAL*/
+        /* grid-template-rows: 300px 300px;INTRODUCIMOS EL TAMAÑO DE CADA FILA QUE QUEREMOS DE ALTURA*/
         grid: 300px 300px 300px /1fr;
         gap: 30px 30px;
 
@@ -356,13 +356,13 @@ strong {
     color: #fff;
     border: 2px solid #000;
     background: #000 url(../img/ico-flecha-derecha-white.png)no-repeat right 20px center;
-    /* CON LO INDICADO DESPUES DE LA URL LE ESTAMOS DICIENDO QUE NO SE REPITA LA IMAGEN (AL SER PEQUENA) Y QUE NOS LO COLOQUE A LA DERECHA CENTRADO Y EL TAMANO*/
+    /* CON LO INDICADO DESPUÉS DE LA URL LE ESTAMOS DICIENDO QUE NO SE REPITA LA IMAGEN (AL SER PEQUEÑA) Y QUE NOS LO COLOQUE A LA DERECHA CENTRADO Y EL TAMAÑO*/
     font-weight: 700;
 
     text-decoration: none;
-    /* ESTAMOS INDICANDO QUE NO QUEREMOS DECORACION COMO EN ESTE CASO QUE ESTE SUBRALLADO POR SER UN ENLACE*/
+    /* ESTAMOS INDICANDO QUE NO QUEREMOS DECORACIÓN COMO EN ESTE CASO QUE ESTE SUBRAYADO POR SER UN ENLACE*/
 
-    /*EN ESTE CASO ESTAMOS INDICADO QUE LA CLASE  ACTUE COMO BLOQUE??*/
+    /*EN ESTE CASO ESTAMOS INDICADO QUE LA CLASE  ACTÚE COMO BLOQUE??*/
     float: right;
 
 }
@@ -373,7 +373,7 @@ strong {
     border-color: #F76666;
 }
 
-/* INTRODUCIMOS UNA INTERACION CUANDO PASEMOS EL CURSOR */
+/* INTRODUCIMOS UNA INTERACCIÓN CUANDO PASEMOS EL CURSOR */
 .zonacentro a,
 .zonacentro p {
     color: #F76666;
@@ -393,7 +393,7 @@ strong {
 
 .underline a:hover {
     text-decoration: underline;
-    /* ESTAMOS INCORPORANDO LA FUNCION DE QUE CUANDO PASEMOS EL RATON POR ENCIMA DEL ENLACE SE SUBRALLE */
+    /* ESTAMOS INCORPORANDO LA FUNCIÓN DE QUE CUANDO PASEMOS EL RATÓN POR ENCIMA DEL ENLACE SE SUBRAYE */
 }
 
 .inline {
@@ -521,7 +521,7 @@ strong {
     background-color: rgba(255, 255, 255, 0.0);
 } */
 
-/* HEMOS HECHO UNA PRUEVA PARA CONSEGUIR QUE LA IMAGEN DE FONDO TENGA OPACIDAD */
+/* HEMOS HECHO UNA PRUEBA PARA CONSEGUIR QUE LA IMAGEN DE FONDO TENGA OPACIDAD */
 
 .displayflex {
     display: flex;
@@ -643,7 +643,7 @@ strong {
     color: #fff;
 }
 
-/* SECCION DE CURSOS Y DE LA ZONA */
+/* SECCIÓN DE CURSOS Y DE LA ZONA */
 
 
 
@@ -789,7 +789,7 @@ strong {
     background: #02052F;
 }
 
-/* INTRODUCCI'ON DE VIDEO */
+/* INTRODUCCIÓN DE VIDEO */
 .video1 {
     position: relative;
     display: block;
