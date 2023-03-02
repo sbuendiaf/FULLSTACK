@@ -32,7 +32,7 @@ body{
     font-family: "DinBold", sans-serif;
     color: #fff;
     border: 2px solid #000;
-    background: #000 url(/img/ico-flecha-derecha-white.png)no-repeat right 20px center;
+    background: #000 url(/PROYECTOINICIO/img/ico-flecha-derecha-white.png)no-repeat right 20px center;
     /* CON LO INDICADO DESPUES DE LA URL LE ESTAMOS DICIENDO QUE NO SE REPITA LA IMAGEN (AL SER PEQUENA) Y QUE NOS LO COLOQUE A LA DERECHA CENTRADO Y EL TAMANO*/ 
     font-weight: 700;
     font-size: 14px;
@@ -62,7 +62,7 @@ textarea{
 }
 .imgfondo{
     display: block;
-    background-image: url(../img/11641893944_banner_zona_centro.png);
+    background-image: url(/PROYECTOINICIO/img/11641893944_banner_zona_centro.png);
     /* ESTAMOS INTRODUCIENDO UN ESTILO A LA CLASE QUE ES QUE NOS PONGA ESA IMAGEN EN EL FONDO*/
     padding-top: 80px;
     padding-bottom: 180px;

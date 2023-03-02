@@ -1,0 +1,94 @@
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: small-caps 100%/200% serif;
+    font-weight: 400;
+    color: #02052F;
+    text-align: left;
+    font-size: 16px;
+
+}
+a{
+    text-decoration: none;
+    color: #02052F;
+    font-family: Cabin, Tahoma, sans-serif, Arial;
+}
+
+.colxl-12,
+.colxl-4,
+.colxl-8,
+.colxl-3 {
+    position: relative;
+    width: 100%;
+
+}
+
+.colxl-12 {
+    flex: 100%;
+    max-width: 100%
+}
+
+.colxl-4 {
+    flex: 33.3%;
+    max-width: 33.3%;
+
+}
+
+.colxl-8 {
+    flex: 66.6%;
+    max-width: 66.6%;
+
+}
+
+.colxl-3 {
+    flex: 25%;
+    max-width: 25%;
+}
+
+.content {
+    width: 114rem;
+    /*TAMAÑO DE LA PÁGINA*/
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.logotipo {
+    display: block;
+    width: 25rem;
+    margin-right: auto;
+    margin-left: auto;
+    /*LE ESTAMOS INDICANDO QUE LA IMAGEN OCUPE EL 25 PORCIENTO DE LA PAGINA O 25REM AHORA Y QUE EL MARGEN SEA AUTOMATICO EN AMBOS LADOS*/
+}
+
+.derecha {
+    display: flex;
+    align-items: center;
+    /*CENTRAMOS HORIZONTALMENTE*/
+    justify-content: flex-end;
+    /*JUSTIFICAMOS EL CONTENIDO A LA DERECHA DE LA PÁGINA, TIENE QUE ESTAR PRECEDIDO DE UN DISPLAY:FLEX*/
+
+}
+
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* SPACE-ARROUND NOS PERMITE CENTRAR Y DIVIDIR EL CENTRO DE LOS DIV QUE HEMOS REALIZADO*/
+}
+
+.item {
+    padding: 5px;
+}
+.submenu{
+    padding: 2rem;
+}

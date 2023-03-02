@@ -27,42 +27,45 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
 <!--A PARTIR DE AQUI INTRODUCIREMOS TODO LO QUE VEREMOS EN LA PÁGINA WEB-->
 
 <body>
-    <nav class="contenedor navprincipal">
-        <div class="pagina">
+    <nav>
+        <div class="contenedor">
             <!--CREAMOS ESTA DIVISION CON ESTA CLASE PARA DARLE UNA FORMA FIJA A TODO EL CONTENIDO-->
             <div class="row">
                 <!--DENTRO DEL FORMATO ANTERIOR CREAREMOS UN FORMATO PARA EVITAR QUE SE NOS PIERDA INFORMACION VISUALMENTE Y SE CENTRE-->
-                <div class="general prueba zonacentro colxl-12">
-                    <div class="derecha">
+                <div class="general zonacentro colxl-12 colsm-12">
+                    <div class="derecha zonacentro underline">
                         <!--CREAMOS ESTA CLASE PARA ASIGNAR UN ESTILO DE CSS QUE NO ALINIE TODO A LA DERECHA CON IMPORTANCIA-->
-                        <a href="#" class="lista zonacentro">
+                        <a href="#">
                             Login Alumnos
                         </a>
                         <p class="elbarra">|</p>
-                        <a href="#" class="lista zonacentro">
+                        <a href="#">
                             Login Empresas
                         </a>
                         <!--ASIGNAMOS LA MISMA CLASE PARA EDITAR TEXTO Y COLOR DE IGUAL MANERA-->
                     </div>
                 </div>
                 <!--SUBDIVIDIMOS EN VARIOS APARTADOS PARA FACILITAR LA EDICION Y COLOCACION-->
-                <div class="inline colxl-12">
+                <div class="colxl-4 colsm-12">
                     <!-- LE DAMOS LA CLASE COLXL-12 PARA INDICARLE QUE ESA DIVISIÓN TENDRÁ EL ANCHO MÁXIMO Y POSTERIOR MENTE A LAS SIGUIENTES DIVISIONES EL % QUE DESEEMOS DE ESE TOTAL -->
-                    <div class="general imgcarrera">
-                        <a href="#">
-                            <img src="/REINICIOPROYECTO/img/Tu-carrera-digital-general.png" class="tucarrera">
-                        </a>
-                    </div>
-                    <div class="general derecha">
+
+                    <a href="#" class="general imgcarrera">
+                        <img src="/REINICIOPROYECTO/img/Tu-carrera-digital-general.png">
+                    </a>
+
+                </div>
+
+                <div class="colxl-8 colsm-12">
+                    <div class="general derecha mt4">
                         <div class="derecha2">
-                            <a href="#" class="lista menusec">
+                            <a href="#" class="lista menusec margind25">
                                 Cursos
                             </a>
-                            <a href="#" class="lista menusec">
+                            <a href="#" class="lista menusec margind25">
                                 Sobre Nosotros
                             </a>
-                            <a href="#" class="lista menusec">
-                                Informate
+                            <a href="#" class="listainf menusec margind25 btn botoninf botoninfradius">
+                                Infórmate
                             </a>
                         </div>
                     </div>
@@ -72,77 +75,265 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
 
     </nav>
 
-    <section class="fondoimg">
+    <main>
+        <div class="fondoimg row">
+            <div class="contenedor">
+                <div class="row">
+                    <div class="colxl-8 colsm-8">
+                        <h1>
+                            Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
+                        </h1>
+                        <img src="/REINICIOPROYECTO/img/ico-centro.png">
+                        <a href="#" class="botones">
+                            VER CURSOS
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="contenedor margen">
+
+            <div class="center2 row fondoradius">
+                <div class="colmd-7 colxl-12 ptb30 mrl15">
+                    <img class="img-fluid" src="/REINICIOPROYECTO/img/Logos-oficiales.png">
+                </div>
+                <div class="colxl-3 colsm-3 ptb60">
+                    <img class="img-fluid" src="/REINICIOPROYECTO/img/Logo-Adecco.png">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section>
         <div class="contenedor">
             <div class="row">
-                <div class="encuadre1 colxl-8">
-                    <h1>
-                        Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
-                    </h1>
-                    <img src="/REINICIOPROYECTO/img/ico-centro.png">
-
-                </div>
+                <h3 class="colxl-12 colsm-12 center pt40 pb10 mb30 c-zona">
+                    <strong>CURSOS</strong>
+                </h3>
+                <h2 class="colxl-12 colsm-12 center pb50">
+                    <strong>CAMBIA TU FUTURO</strong>
+                </h2>
             </div>
         </div>
     </section>
 
-    <section class="contenedor">
-        <div>
-            <div class="center">
-                <div class="imgred">
-                    <img src="/REINICIOPROYECTO/img/Logos-oficiales.png">
-                </div>
-                <div class="imgred">
-                    <img src="/REINICIOPROYECTO/img/Logo-Adecco.png">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="localizaciones">
+    <section class="mb70">
         <div class="contenedor">
-            <div class="loc">
-                <h2>
+            <div class="row center">
+                <div class="selector">
+                    <a href="#">VER TODO</a>
+                </div>
+                <div class="selector">
+                    <a href="#">ALCOBENDAS Y LA MORALEJA</a>
+                </div>
+                <div class="selector">
+                    <a href="#">MADRID</a>
+                </div>
+            </div>
+            <div class="imgcursos">
+                <div class="marketing">
+                    <h2> MARKETING DIGITAL</h2>
+                    <a href="#" class="inscribete ">INSCRIBEME</a>
+                </div>
+                <div class="videojuegos">
+                    <h2>PROGRAMACIÓN DE VIDEOJUEGOS, DISEÑO 3D Y REALIDAD VIRTUAL</h2>
+                    <a href="#" class="inscribete">INSCRIBEME</a>
+                </div>
+                <div class="proweb">
+                    <h2>PROGRAMACIÓN WEB FULL STACK</h2>
+                    <a href="#" class="inscribete">INSCRIBEME</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb60 bg-white">
+        <div class="contenedor">
+            <div class="row center pt20 pb20">
+                <h3 class="colxl-12 colsm-12">
+                    <strong> ¿TE INTERESA ALGÚN OTRO CURSO EN TU CIUDAD?</strong>
+                </h3>
+
+                <div class="colxl-12 colsm-12 underline">
+                    <a href="#" class="pidenoslo pidenoslobt">¡PÍDENOSLO!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt70">
+        <div class="contenedor">
+            <div class="row center">
+                <div class="colxl-12 colsm-12">
+                    <div class="video1">
+
+                        <iframe class="video2" src="https://www.youtube.com/embed/SzZlMSDKE8o"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb100">
+        <div class="contenedor">
+            <div class="text-colum">
+                <div class="pt70 paraquien">
+                    <h3>
+                        <b>¿PARA QUIÉN SON ESTOS CURSOS?</b>
+                    </h3>
+                    <h2>
+                        <b>Si quieres dar un giro a tu carrera profesional y formarte en profesiones digitales con
+                            futuro, este es tu lugar.</b>
+                    </h2>
+                    <div>
+                        Cuando eliges un curso en <b>Tu Carrera Digital</b>, estás dando el paso definitivo hacia las
+                        profesiones con más demanda del momento, como Marketing Digital, Desarrollo Web Full Stack y
+                        Programación de Videojuegos, Diseño 3D y Realidad Virtual. Nosotros te ofrecemos formación con
+                        docentes expertos y contenidos alineados a las necesidades de las empresas. Queremos que saques
+                        el máximo partido a estos cursos y que potencies tus posibilidades de encontrar un empleo.
+                    </div>
+                    <h4>
+                        <b>PARA PARTICIPAR, NECESITARÁS ESTAR INSCRITO EN GARANTÍA JUVENIL</b>
+                    </h4>
+                    <a href="#" class="flecha">IR A LA WEB DE GARANTÍA JUVENIL</a>
+                    <div>
+                        <b>Descárgate esta infografía en la que te mostramos cómo descargar tu certificado de Garantía Juvenil: </b>
+                    </div>
+                    <a href="#" class="inscribete">DESCARGAR INFOGRAFÍA ADJUNTA</a>
+                </div>
+                <div class="pt70">
+                    <a href="#">
+                        <img src="/REINICIOPROYECTO/img/21643022702_cta_para_quien_centro.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="localizaciones pb100">
+        <div class="contenedor">
+            <div class="colxl-12 colsm-12">
+                <h2 class="font-bold">
                     LOCALIZACIONES:
                 </h2>
             </div>
         </div>
         <div class="contenedor loc2">
-            <div class="colxl-3">
-                <h3>
+            <div class="colxl-3 colsm-3  locMg">
+                <h3 class="mb0 font-bold">
                     MADRID
                 </h3>
-                <p>
+                <p class="mb0 mt0">
                     AVENIDA MANOTERAS 32 28050, MADRID, MADRID.
                 </p>
             </div>
-            <div class="colxl-3">
-                <h3>
+            <div class="colxl-3 colsm-3 locMg">
+                <h3 class="mb0 font-bold">
                     MADRID
                 </h3>
-                <p>
+                <p class="mb0 mt0">
                     CALLE SAN SOTERO 3 PLANTA 3ª AULA 31 28037, MADRID, MADRID.
                 </p>
             </div>
-            <div class="colxl-3">
-                <h3>
+            <div class="colxl-3 colsm-3 locMg">
+                <h3 class="mb0 font-bold">
                     CARBAJOSE DE LA SAGRADA
                 </h3>
-                <p>
+                <p class="mb0 mt0">
                     CALLE SEGUNDA 43 37188, CASTILLA LEÓN, SALAMANCA.
                 </p>
             </div>
-            <div class="colxl-3">
-                <h3>
+            <div class="colxl-3 colsm-3 locMg">
+                <h3 class="mb0 font-bold">
                     ALCOBENDAS Y LA MORALEJA
                 </h3>
-                <p>
+                <p class="mb0 mt0">
                     CALLE SORIA 43 28100, MADRID, MADRID.
                 </p>
             </div>
 
         </div>
     </section>
+
+    <section class="inscripciones insfond">
+        <div class="contenedor">
+            <div class="row">
+                <div class="colxl-12">
+                    <h3>
+                        CONTACTAR
+                    </h3>
+                    <h2>
+                        <strong>¿TIENES DUDAS? HABLA CON NOSOTROS:</strong>
+                    </h2>
+                </div>
+            </div>
+            <div class="contactos">
+                <div class="bg-white radiuscnt cot-lla-esc contac-center">
+
+                    <div class="derecha">
+                        <img src="/REINICIOPROYECTO/img/ico-TLF.png">
+                    </div>
+
+                    <p>
+                        <span class="text-card">
+                            LLÁMANOS:
+                        </span>
+                        <br>
+                        <a href="638024408" class="contac-card">638024408</a>
+                    </p>
+                </div>
+                <div class="bg-white radiuscnt cot-lla-esc contac-center">
+                    <div class="derecha ">
+
+                        <img src="/REINICIOPROYECTO/img/ico-EMAIL.png">
+                    </div>
+
+                    <p class="">
+                        <span class="text-card">
+                            ESCRÍBENOS:
+                        </span>
+                        <br>
+                        <a href="patric.departearroyo@adecco.com"
+                            class="contac-card">patric.departearroyo@adecco.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedor">
+            <div class="footer">
+                <div id="prin-menu-footer" class="row">
+                    <div class="colxl-3 colsm-12">
+                        <h3>CURSOS ZONA-CENTRO</h3>
+                    </div>
+                    <div class="colxl-3 colsm-12">
+                        <a href="SOBRE NOSOTROS">
+                            <h3>
+                                SOBRE NOSOTROS
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div id="link-legal" class="row mt16">
+                    <div class="colxl-12 colsm-12 linea-top-bot">
+                        <a class="mr50" href="#">Preguntas Frecuentes (FAQ)</a>
+                        <a class="mr50" href="#">Política de Cookies</a>
+                        <a class="mr50" href="#">Política de Privacidad</a>
+                        <a class="mr50" href="#">Aviso Legal</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 

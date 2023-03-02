@@ -1,61 +1,156 @@
-
-html{
+html {
     font-size: 62.5%;
-    
+
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+:root {
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    display: block;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     color: #02052F;
     text-align: left;
     font-size: 16px;
-   
-}
+    margin: 0;
+    line-height: 1.5;
 
-nav{
+
+}
+p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+nav {
     background-color: #fff;
-    padding-top: 15px;
     justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #f3f3f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    line-height: 1.2;
+    font-family: inherit;
+    font-weight: 500;
+    display: block;
 
 }
+
+
+footer h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
 h1 {
-    font-family: "DinBold", sans-serif;
+    font-family: var(--font-family-sans-serif);
     color: white;
+    display: block;
+    font-weight: 800 !important;
     background-color: rgba(248, 102, 102, 0.65);
     text-align: left;
     /* INDICAREMOS DONDE NOS ALINEARA EL TEXTO*/
     padding: 35px;
-    display: block;
+    margin-bottom: 10px;
     font-size: 45px;
-    
+    line-height: 1.2;
+    /* box-shadow: 10px 10px 15px 1px rgba(107, 103, 107, 1); */
+    /* ESTAMOS INTRODUCIENDO UN SOMBREADO EN LA PARTE DE ATRAS DANDO UN EFECTO 3D */
 }
 
-div{
+h3 {
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+h2 {
+    font-size: 27px;
+    margin-bottom: 22px;
+}
+
+h4 {
+    font-size: 15px;
+    margin-bottom: 22px;
+    line-height: 1.8;
+}
+
+
+div {
     display: block;
 }
 
-img{
+img {
     border-style: none;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
     /* LE INDICO QUE EN LOS ENLACES NO QUIERO DECORACION COMO EL SUBRAYADO */
+    color: black;
 }
-h1, h2, h3, h4, h5, h6{
-    margin-top: 0;
+
+footer a {
+    color: #02052F;
 }
-.zonacentro{
-    color:#F76666;
+
+b,
+strong {
+    font-weight: 800;
 }
-.contenedor{
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.contenedor {
     width: 114rem;
     /* DETERMINAMOS EL ANCHO DE LA PAGINA */
     margin: 0 auto;
-    padding: 0 auto;
+
 }
-.pagina{
+
+.c-zona {
+    color: #F76666;
+}
+
+.derecha {
+    /* text-align: right !important; */
+    /*ESTAMOS INDICANDO QUE ESTA CARACTERISTICA PREDOMINA SOBRE EL RESTO*/
+    display: flex;
+    flex-wrap: wrap;
+    /* EN EL ELEMENTO QUE TRABAJAMOS DECIMOS QUE CUANDO NO QUEPA EL ELEMENTO EN EL ANCHO DE PÁGINA NOS LO PASE A LA SIGUIENTE LINEA */
+    flex: 100%;
+    /*LE ESTAMOS INDICANDO QUE EL DIV NOS COJA EL 100% DEL ANCHO DE LA PÁGINA*/
+    flex-wrap: 100%;
+    justify-content: flex-end;
+    /* JUSTIFICAMOS EL CONTENIDO AL FINAL DEL FLEX */
+    align-items: center;
+    /* NOS ALINEA EL CONTENIDO EN EL CENTRO DEL ESPACIO DEL ESPACIO CONTENEDOR VERTICALMENTE */
+
+}
+
+.mt4 {
+    margin-top: 24px !important;
+}
+
+.pagina {
     /*ESTA FORMA NOS DARA EL FORMATO GENERAL DE LA ESTRUCTURA DE LA PAGINA DELIMITAN LOS MARGENES*/
     /*ESTABLECE QUE LA PAGINA OCUPARA EL 100% DE LA PANTALLA*/
     padding-right: 15px;
@@ -64,137 +159,741 @@ h1, h2, h3, h4, h5, h6{
     margin-left: auto;
 
 }
-.navprincipal{
-    padding: 15px 0 10px;
-}
-.elbarra{
-    margin: 0;
-}
-.row{
+
+.row {
     /*NOS PERMITE ENCUADRAR EL TEXTO*/
     padding-right: -15px;
     padding-left: -15px;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     /* ESTO NOS PERMITE QUE LE CONTENIDO SEA FLEXIBLE Y SE MODIFIQUE SOLO CON EL CONTENIDO */
 }
-.inline{
-    display: flex;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    margin: 0;
-}
-.general{
-    width: 100%;
-    min-height: 1px;
-   
-    
+
+.estructura {
+    padding: 0 15px;
 }
 
-.derecha{
-    /* text-align: right !important; */
-    /*ESTAMOS INDICANDO QUE ESTA CARACTERISTICA PREDOMINA SOBRE EL RESTO*/
-    display: flex;
-    flex-wrap: wrap;
-    /* EN EL ELEMENTO QUE TRABAJAMOS DECIMOS QUE CUANDO NO QUEPA EL ELEMENTO EN EL ANCHO DE PÁGINA NOS LO PASE A LA SIGUIENTE LINEA */
-    flex:100%;
-    /*LE ESTAMOS INDICANDO QUE EL DIV NOS COJA EL 100% DEL ANCHO DE LA PÁGINA*/
-    flex-wrap: 100%;
-    justify-content: flex-end;
-    /* JUSTIFICAMOS EL CONTENIDO AL FINAL DEL FLEX */
-    align-items: center;
-    /* NOS ALINEA EL CONTENIDO EN EL CENTRO DEL ESPACIO DEL ESPACIO CONTENEDOR VERTICALMENTE */
-    
-}
-.derecha2{
-    align-items: right !important;
-    
-}
-.colxl-12, .colxl-4, .colxl-8, .colxl-3{
+.colxl-12,
+.colxl-4,
+.colxl-8,
+.colxl-3,
+.colsm-12,
+.colsm-8,
+.colsm-4,
+.colsm-3 .col {
     position: relative;
     width: 100%;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-}
-.colxl-12{
-    flex: 100%;
-    max-width: 100%
-    
-}
-.colxl-4{
-    flex: 33.3%;
-    max-width: 33.3%;
-    
-}
-.colxl-8{
-    flex: 66.6%;
-    max-width: 66.6%;
-    
-}
-.colxl-3{
-    flex: 25%;
-    max-width: 25%;
-}
-/*COL LO UTILIZAMOS PARA DETERMINAR QUE PORCENTAJE DEL ESPACIO COPUPA UN DETERMINADO ELEMENTO*/
 
-.imgcarrera{
-   display: block;
-   padding-top: 17px;
+}
+
+@media (max-width:1200px) {
+    .contenedor {
+        width: 90%;
+        /* DETERMINAMOS EL ANCHO DE LA PAGINA */
+        margin: 0 auto;
+
+    }
+}
+
+@media (min-width:821px) {
+    .colxl-12 {
+        flex: 100%;
+        max-width: 100%
+    }
+
+    .colxl-4 {
+        flex: 33.3%;
+        max-width: 33.3%;
+
+    }
+
+    .colxl-8 {
+        flex: 66.6%;
+        max-width: 66.6%;
+
+    }
+
+    .colxl-3 {
+        flex: 25%;
+        max-width: 25%;
+    }
+
+    .botones {
+        font-size: 14px;
+        padding: 24px 94px;
+    }
+
+    .colmd-7 {
+        flex: 58.333%;
+        max-width: 58.333%;
+    }
+
+    .mrl15 {
+        margin-left: 8.33%;
+
+    }
+
+    .imgcursos {
+        display: grid;
+        /* grid-template-columns: 50% 50%; /* INTRODUCIMOS EL TAMANO DE CADA COLUMNA QUE QUEREMOS DEL ESPACIO GENERAL*/
+        /* grid-template-rows: 300px 300px;INTRODUCIMOS EL TAMANO DE CADA FILA QUE QUEREMOS DE ALTURA*/
+        grid: 300px 300px / 1fr 1fr;
+        gap: 30px;
+
+    }
+
+    .imgcursos a {
+        bottom: 50px;
+    }
+
+    .text-colum {
+        display: grid;
+        grid: auto/1fr 1fr;
+        gap: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .contactos {
+        display: grid;
+        grid: 128px/1fr 1fr;
+        gap: 30px 30px;
+        margin: 0 15px 60px 15px;
+
+    }
+}
+
+
+
+@media (max-width:820px) {
+    
    
+    .colsm-12 {
+        flex: 100%;
+        max-width: 100%
+    }
+
+    .colsm-4 {
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+    .colsm-7 {
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+    .colsm-8 {
+        flex: 100%;
+        max-width: 100%;
+
+    }
+
+    .colsm-3 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    /*COL LO UTILIZAMOS PARA DETERMINAR QUE PORCENTAJE DEL ESPACIO COPUPA UN DETERMINADO ELEMENTO*/
+    .loc2 {
+        flex-wrap: wrap;
+    }
+
+    .botones {
+        font-size: 14px;
+        padding: 24px 63px;
+    }
+
+    .imgcursos {
+        display: grid;
+        /* grid-template-columns: 50% 50%; /* INTRODUCIMOS EL TAMANO DE CADA COLUMNA QUE QUEREMOS DEL ESPACIO GENERAL*/
+        /* grid-template-rows: 300px 300px;INTRODUCIMOS EL TAMANO DE CADA FILA QUE QUEREMOS DE ALTURA*/
+        grid: 300px 300px 300px /1fr;
+        gap: 30px 30px;
+
+    }
+
+    .imgcursos a {
+        bottom: 40px;
+    }
+
+    h1 {
+        padding: 25px;
+    } 
+    .text-colum {
+        display: grid;
+        grid: 1fr / 1fr;
+        gap: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .contactos {
+        display: grid;
+        grid: 128px 128px / 1fr;
+        gap: 30px 30px;
+        margin: 0 15px 60px 15px;
+
+    }
 }
-.tucarrera{
-    box-sizing: border-box;
+
+.locMg {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
-.menusec{
-    color: #02052F !important;
+
+.font-bold {
+    font-weight: 700 !important;
+}
+
+.botones {
+    font-family: var(--font-family-sans-serif);
+    color: #fff;
+    border: 2px solid #000;
+    background: #000 url(/REINICIOPROYECTO/img/ico-flecha-derecha-white.png)no-repeat right 20px center;
+    /* CON LO INDICADO DESPUES DE LA URL LE ESTAMOS DICIENDO QUE NO SE REPITA LA IMAGEN (AL SER PEQUENA) Y QUE NOS LO COLOQUE A LA DERECHA CENTRADO Y EL TAMANO*/
+    font-weight: 700;
+
+    text-decoration: none;
+    /* ESTAMOS INDICANDO QUE NO QUEREMOS DECORACION COMO EN ESTE CASO QUE ESTE SUBRALLADO POR SER UN ENLACE*/
+
+    /*EN ESTE CASO ESTAMOS INDICADO QUE LA CLASE  ACTUE COMO BLOQUE??*/
+    float: right;
+
+}
+
+.botones:hover {
+    color: #F76666;
+    background: white url(/PROYECTOINICIO/img/ico-flecha-derecha-red.png) no-repeat right 20px center;
+    border-color: #F76666;
+}
+
+/* INTRODUCIMOS UNA INTERACION CUANDO PASEMOS EL CURSOR */
+.zonacentro a,
+.zonacentro p {
+    color: #F76666;
+}
+
+.margind25 {
+    margin-right: 25px;
+}
+
+
+
+
+.elbarra {
+    padding: 0 3px;
+    margin: 0 5px;
+}
+
+.underline a:hover {
+    text-decoration: underline;
+    /* ESTAMOS INCORPORANDO LA FUNCION DE QUE CUANDO PASEMOS EL RATON POR ENCIMA DEL ENLACE SE SUBRALLE */
+}
+
+.inline {
+    display: flex;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin: 0;
+}
+
+.general {
+    width: 100%;
+    min-height: 1px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 6px 16px;
+    line-height: 1.5;
+}
+
+.botoninf {
+    background-color: #F76666;
+}
+
+.botoninf:hover {
+    background-color: #117a8b !important;
+}
+
+.botoninfradius {
+    color: #fff !important;
+    border-radius: 20px;
+}
+
+.derecha2 {
+    align-items: right !important;
+
+}
+
+
+
+.imgcarrera {
+    display: block;
+    padding-top: 17px;
+
+}
+
+.menusec {
+    color: #02052F;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    
-}
-.lista{
-    margin: 0 8px;
- 
+
 }
 
-.localizaciones{
+.lista {
+    margin: 0 8px;
+
+}
+
+.listainf {
+    margin: 0 0 0 8px;
+}
+
+.localizaciones {
     background-color: #000;
     color: #fff;
-    padding: 5rem 0;
-    
-}
-.loc{
-    padding-bottom: 3rem;
+    padding: 90px 0;
+
 }
 
-.loc2{
+
+.loc2 {
     display: flex;
+
 }
-.direccion{
-    padding: 0 10px;
+
+.localizaciones h2 {
+    margin-bottom: 50px;
 }
-.center{
+.center {
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-.imgred{
+
+.center2 {
+    text-align: center;
+    align-items: center;
+
+}
+
+.imgred {
     align-items: center;
 }
-.fondoimg{
+
+.fondoimg {
+
     background-image: url(/REINICIOPROYECTO/img/11641893944_banner_zona_centro.png);
     background-repeat: no-repeat;
     background-size: cover;
+
     /*ESTOS DOS COMANDOS NOS PERMITEN DECIRLE QUE NO NOS REPITA LA IMAGEN UNA VEZ LLEGUE A SU TAMAÑO MÁXIMO
     EL OTRO COMANDO NOS DICE QUE EL CONTENIDO DEL FONDO CUBRA TODA LA PANTALLA*/
     padding-top: 80px;
     padding-bottom: 180px;
+    /* position: relative; */
+    z-index: -1;
+
 }
-.encuadre1{
-    
-   
+
+.fondoimg h1 {
+    font-size: 48px;
 }
-.displayflex{
+
+/* .fondoimg::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.0);
+} */
+
+/* HEMOS HECHO UNA PRUEVA PARA CONSEGUIR QUE LA IMAGEN DE FONDO TENGA OPACIDAD */
+
+.displayflex {
     display: flex;
     flex-wrap: wrap;
     /**/
+}
+
+.margen {
+    z-index: 3;
+    margin-top: -94px;
+
+}
+
+.fondoradius {
+    background-color: white;
+    border-radius: 15px;
+
+
+}
+
+.linblanca {
+    background-color: white;
+
+
+}
+
+.mb0 {
+    margin-bottom: 0px;
+}
+.mt0{
+    margin-top: 0;
+}
+.ptb30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+}
+
+.ptb60 {
+    padding: 60px 0;
+
+}
+
+.pt40 {
+    padding-top: 40px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+.mb70 {
+    margin-bottom: 70px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.pb60 {
+    padding-bottom: 60px;
+}
+
+.pt70 {
+    padding-top: 70px;
+}
+
+.pb100 {
+    padding-bottom: 100px !important;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mr50 {
+    margin-right: 50px;
+}
+
+.selector {
+    margin-bottom: 85px;
+    padding-top: 10px;
+}
+
+.selector:not(:last-child) {
+    margin-right: 0.8rem;
+
+}
+
+.selector a {
+    border: 1px solid;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.selector a {
+    border-color: #F76666;
+    border-radius: 0px;
+}
+
+.selector a:hover {
+    background: #F76666;
+    color: #fff;
+}
+
+/* SECCION DE CURSOS Y DE LA ZONA */
+
+
+
+.marketing {
+    background-image: url(/REINICIOPROYECTO/img/Curso-marketing-digital-centro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: right;
+    padding: 40px 60px;
+}
+
+.videojuegos {
+    background-image: url(/REINICIOPROYECTO/img/Curso-programacion-videojuegos-centro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: right;
+    padding: 40px 60px;
+}
+
+.proweb {
+    background-image: url(/REINICIOPROYECTO/img/Curso-programacion-web-full-stack-centro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: right;
+    padding: 40px 60px;
+}
+
+.imgcursos h2 {
+
+    color: #fff;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.imgcursos a {
+    position: absolute;
+    left: 60px;
+    padding: 20px 44px;
+    background: #fff;
+    color: #F76666;
+    border-color: #fff;
+    border: 2px;
+}
+
+.inscribete {
+    font-family: "DinBold", sans-serif;
+    min-height: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 24px 94px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.imgcursos a:hover {
+    border: 2px solid white;
+    background: #F76666;
+    border-color: #fff;
+    color: #fff;
+
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+/* APARTADO CON TEXTO */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.text-colum .paraquien div {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.paraquien h4 {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.paraquien h3 {
+    color: #F76666;
+}
+
+.flecha {
+    color: #F76666;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    display: block;
+    text-decoration: underline;
+}
+
+.flecha::after {
+    content: "";
+    margin-left: 10px;
+    width: 31px;
+    height: 16px;
+    background: url(/REINICIOPROYECTO/img/ico-flecha-derecha-red.png);
+    display: inline-block;
+}
+
+.paraquien .inscribete {
+    color: #fff;
+    float: none;
+    background: #F76666;
+    padding: 20px 40px;
+    border: 2px solid #fff;
+}
+.paraquien .inscribete:hover {
+    background: #fff;
+    padding: 20px 40px;
+    border: 2px solid #F76666;
+    color: #F76666;
+}
+
+/* SUBMENU TE INTERESA Y PIDENOSLO */
+
+.pidenoslo {
+    background-color: #F76666;
+}
+
+.pidenoslobt {
+    color: #fff;
+    font-weight: 700;
+    float: none;
+    padding: 20px 40px;
+    border-radius: 96px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.pidenoslobt:hover {
+    color: #fff;
+    background: #02052F;
+}
+
+/* INTRODUCCI'ON DE VIDEO */
+.video1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 600px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+/* INSCRIPCIONES ROSAS */
+.insfond {
+    background-color: #F76666 !important;
+}
+
+.inscripciones {
+    padding: 90px 0;
+}
+
+
+
+.radiuscnt {
+    border: 1px;
+    border-radius: 0.4rem;
+}
+
+.inscripciones h2 {
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.inscripciones h3 {
+    color: #f8f9fa !important;
+}
+
+.contactos img {
+    max-height: 60px;
+}
+
+.cot-lla-esc {
+    display: grid;
+    grid: auto /1fr 5fr;
+    gap: 10px;
+
+}
+
+.contac-center {
+
+    align-items: center;
+    align-content: center;
+
+}
+
+.text-card {
+    font-family: var(--font-family-sans-serif);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.contac-card {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 22px;
+    color: #F76666;
+}
+
+/* FOOTER */
+.footer {
+    display: grid;
+    grid: 54px 66px/auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.linea-top-bot {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #194584 !important;
+    border-bottom: 1px solid #194584 !important;
+}
+
+#prin-menu-footer a {
+    font-size: 14px;
+    color: #02052F;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#link-legal {
+    font-size: 14px;
+    text-decoration: underline;
 }
