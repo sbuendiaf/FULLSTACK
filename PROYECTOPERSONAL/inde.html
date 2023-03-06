@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProSergio</title>
 
-    <link rel="reload" href="/PROYECTOPERSONAL/css/normalize.css" as="style">
-    <link href="/PROYECTOPERSONAL/css/normalize.css" rel="stylesheet">
-    <link rel="reload" href="/PROYECTOPERSONAL/css/style.css" as="style">
+    <link rel="reload" href="css/normalize.css" as="style">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="reload" href="css/style.css" as="style">
     <!--DICE AL NAVEGADOR QUE REALICE UNA PRECARGA (ES UNA BUENA PRACTICA PARA EVITAR FALLOS VISUALES)-->
 
-    <link href="/PROYECTOPERSONAL/css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- HREF INDICAREMOS LA DIRECCIÓN DEL ARCHIVO DE ESTILOS DE CSS
     REL NOS INDICARA LA RELACIÓN CON LA HOJA O FUNCIÓN QUE REALIZAR
     AS: INDICA AL NAVEGADOR QUE ES EL ESTILO
@@ -21,57 +21,73 @@
 
 
 <body>
-    <header class="content">
-        <div>
-            <div class="colxl-12">
-                <div>
-                    <nav>
-                        <div>
-                            <div class="derecha">
-                                <span>ENVÍO GRATIS - MENOS DE 10 DÍAS</span>
-                                <a href="#" class="item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user"
-                                        width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#9e9e9e"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx="12" cy="7" r="4" />
-                                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                    </svg>
-                                </a>
-                                <a href="#" class="item">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="icon icon-tabler icon-tabler-shopping-cart" width="32" height="32"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="#9e9e9e" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <circle cx="6" cy="19" r="2" />
-                                        <circle cx="17" cy="19" r="2" />
-                                        <path d="M17 17h-11v-14h-2" />
-                                        <path d="M6 5l14 1l-1 7h-13" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </nav>
-                    <!--ESTE SERÁ EL NAVEGADOR SUPERIOR DONDE ESTÁ EL REGISTRO BOLSA DE LA COMPRA E INFORMACIÓN-->
-                </div>
-                <div>
-                    <img src="/PROYECTOPERSONAL/img/Captura de pantalla 2023-02-21 a las 11.48.24.png" class="logotipo">
-                </div>
-                <div class="submenu">
-                    <div class="colxl-12">
-                        <nav class="centro">
+    <header class="contenedor">
 
-                            <a href="#">Sobre mí</a>
-                            <a href="#">Galería</a>
-                            <a href="#">Noticias</a>
+        <nav>
+            <div class="contenedor_nav">
+                <div class="navtop">
 
-                        </nav>
+                    <div class="submenu right_icon">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-search icon-color" width="28" height="28"
+                                viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="10" cy="10" r="7" />
+                                <line x1="21" y1="21" x2="15" y2="15" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell icon-color"
+                                width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user icon-color"
+                                width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="7" r="4" />
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="logomenu">
+                        <a href="#inicio" class="center">
+                            <img src="img/MEDIATV_BLANCO.png" class="logotv">
+                        </a>
+                    </div>
+                    <div class="prinmenu center_around ptb20">
+                        <a href="#">Series</a>
+                        <a href="#">Películas</a>
+                        <a href="#">Novedades</a>
+                        <a href="#">Noticias</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
+
     </header>
+    <section>
+        <div>
+            <div class="slider-tendencia">
+                <ul>
+                    <li><img src="img/Cruella-918965908-large.jpeg" alt=""></li>
+                    <li><img src="img/Cruella-918965908-large.jpeg" alt=""></li>
+                    <li><img src="img/Cruella-918965908-large.jpeg" alt=""></li>
+                    <li><img src="img/Cruella-918965908-large.jpeg" alt=""></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

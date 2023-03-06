@@ -26,7 +26,7 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
 <!--A PARTIR DE AQUÍ INTRODUCIREMOS TODO LO QUE VEREMOS EN LA PÁGINA WEB-->
 
 <body>
-    <nav>
+    <nav id="inicio">
         <div class="contenedor">
             <!--CREAMOS ESTA DIVISION CON ESTA CLASE PARA DARLE UNA FORMA FIJA A TODO EL CONTENIDO-->
             <div class="row">
@@ -56,7 +56,7 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
 
                 <div class="colxl-8 colsm-12">
                     <div class="general derecha mt4">
-                        <div class="derecha2">
+                        <div class="derecha2 underline">
                             <a href="#" class="lista menusec margind25">
                                 Cursos
                             </a>
@@ -73,6 +73,11 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
         </div>
 
     </nav>
+    <div class="botseg">
+        <a href="#">
+            <img src="img/CTA-informate.png">
+        </a>
+    </div>
 
     <main>
         <div class="fondoimg row">
@@ -168,13 +173,11 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
         <div class="contenedor">
             <div class="row center">
                 <div class="colxl-12 colsm-12">
-                    <div class="video1">
+                    <iframe class="video1" src="https://www.youtube.com/embed/SzZlMSDKE8o" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
 
-                        <iframe class="video2" src="https://www.youtube.com/embed/SzZlMSDKE8o"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
                 </div>
             </div>
         </div>
@@ -203,7 +206,8 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
                     </h4>
                     <a href="#" class="flecha">IR A LA WEB DE GARANTÍA JUVENIL</a>
                     <div>
-                        <b>Descárgate esta infografía en la que te mostramos cómo descargar tu certificado de Garantía Juvenil: </b>
+                        <b>Descárgate esta infografía en la que te mostramos cómo descargar tu certificado de Garantía
+                            Juvenil: </b>
                     </div>
                     <a href="#" class="inscribete">DESCARGAR INFOGRAFÍA ADJUNTA</a>
                 </div>
@@ -333,6 +337,12 @@ ES MUY IMPORTANTE COMENTAR EL CÓDIGO PARA TENER UN ORDEN Y SEGUIMIENTO DE LAS A
             </div>
         </div>
     </footer>
+    <a href="#" class="infresponsive">
+        <span>¡INFÓRMATE!</span>
+        <img src="img/ico-informate.png">
+    </a>
+    <a href="#inicio" class="scrolltop" style="display: inline;"></a>
+    <script src="script.js"></script>
 </body>
 
 

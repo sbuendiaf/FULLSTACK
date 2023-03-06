@@ -1,20 +1,27 @@
-html {
-    font-size: 62.5%;
 
+:root{
+    --background-color: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgba(92,92,92,1) 29%, rgba(66,66,66,1) 63%, rgba(22,22,22,1) 100%)no-repeat;
+    --blanco-letra: #f1f1f1;
 }
-
 body {
+    background:var(--background-color);
     font-family: small-caps 100%/200% serif;
     font-weight: 400;
-    color: #02052F;
+    color: var(--blanco-letra);
     text-align: left;
-    font-size: 16px;
-
+    /* height: 2000px; QUITAR ACABADO CONTENIDO */
 }
-a{
+
+a {
     text-decoration: none;
-    color: #02052F;
+    color: var(--blanco-letra);
     font-family: Cabin, Tahoma, sans-serif, Arial;
+}
+.contenedor {
+    width: 95%;
+    /*TAMAÑO DE LA PÁGINA*/
+    margin: 0 auto;
+
 }
 
 .colxl-12,
@@ -26,34 +33,37 @@ a{
 
 }
 
-.colxl-12 {
-    flex: 100%;
-    max-width: 100%
+@media (max-width:1200px) {
+    .contenedor {
+        width: 100%;
+        /* DETERMINAMOS EL ANCHO DE LA PAGINA */
+        margin: 0 40px;
+
+    }
 }
 
-.colxl-4 {
-    flex: 33.3%;
-    max-width: 33.3%;
+@media (min-width:821px) {
+    .colxl-12 {
+        flex: 100%;
+        max-width: 100%
+    }
 
-}
+    .colxl-4 {
+        flex: 33.3%;
+        max-width: 33.3%;
 
-.colxl-8 {
-    flex: 66.6%;
-    max-width: 66.6%;
+    }
 
-}
+    .colxl-8 {
+        flex: 66.6%;
+        max-width: 66.6%;
 
-.colxl-3 {
-    flex: 25%;
-    max-width: 25%;
-}
+    }
 
-.content {
-    width: 114rem;
-    /*TAMAÑO DE LA PÁGINA*/
-    margin: 0 auto;
-    padding: 0 auto;
-
+    .colxl-3 {
+        flex: 25%;
+        max-width: 25%;
+    }
 }
 
 .row {
@@ -62,15 +72,9 @@ a{
 
 }
 
-.logotipo {
-    display: block;
-    width: 25rem;
-    margin-right: auto;
-    margin-left: auto;
-    /*LE ESTAMOS INDICANDO QUE LA IMAGEN OCUPE EL 25 PORCIENTO DE LA PAGINA O 25REM AHORA Y QUE EL MARGEN SEA AUTOMATICO EN AMBOS LADOS*/
-}
 
-.derecha {
+
+.right {
     display: flex;
     align-items: center;
     /*CENTRAMOS HORIZONTALMENTE*/
@@ -78,17 +82,101 @@ a{
     /*JUSTIFICAMOS EL CONTENIDO A LA DERECHA DE LA PÁGINA, TIENE QUE ESTAR PRECEDIDO DE UN DISPLAY:FLEX*/
 
 }
-
-.centro{
+.center{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.center_around {
+    display: flex;
+    align-content: center;
     justify-content: space-around;
-    /* SPACE-ARROUND NOS PERMITE CENTRAR Y DIVIDIR EL CENTRO DE LOS DIV QUE HEMOS REALIZADO*/
+    /* SPACE-AROUND NOS PERMITE CENTRAR Y DIVIDIR EL CENTRO DE LOS DIV QUE HEMOS REALIZADO*/
 }
 
-.item {
-    padding: 5px;
+.ptb20{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* NAV SUPERIOR */
+.contenedor_nav{
+    padding: 20px;
+}
+.navtop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height:auto ;
 }
 .submenu{
-    padding: 2rem;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.logomenu{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.prinmenu{
+    grid-column: 1/5;
+    grid-row: 2/3;
+}
+.logotv{
+    width: 45%;
+    
+}
+.right_icon {
+    display: flex;
+    justify-content: flex-end;
+    /*JUSTIFICAMOS EL CONTENIDO A LA DERECHA DE LA PÁGINA, TIENE QUE ESTAR PRECEDIDO DE UN DISPLAY:FLEX*/
+    align-items: start;
+}
+.prinmenu a{
+    padding: 5px 25px;
+}
+.submenu a{
+    padding: 3px;
+    margin: 5px;
+}
+.logomenu img{
+    margin: 3px;
+}
+.icon-color{
+    stroke: var(--blanco-letra);
+}
+/* SLIDER DE LAS TENDENCIAS */
+
+.slider-tendencia{
+    max-width: 1100px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+    animation: slide 16s infinite alternate ease-in-out;
+
+}
+.slider-tendencia ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+
+.slider-tendencia li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-tendencia img{
+    width: 100%;
+}
+@keyframes slide {
+    0% {margin-left:0%;}
+    20% {margin-left:0%;}
+
+    25% {margin-left:-100%;}
+    45% {margin-left:-100%;}
+
+    50% {margin-left:-200%;}
+    70% {margin-left:-200%;}
+
+    75% {margin-left:-300%;}
+    95% {margin-left:-300%;}
 }
