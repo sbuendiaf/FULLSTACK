@@ -199,11 +199,12 @@ a {
     display: grid;
     grid-template-columns: repeat(5, auto);
     margin: 20px 0;
+    border-radius: 10px;
 }
 .wrapper section .item {
     padding: 0 2px;
     transition: 250ms all;
-    
+    border-radius: 10px;
 }
 .wrapper section .item:hover {
     margin: 0 40px;
