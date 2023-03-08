@@ -101,6 +101,9 @@ a {
 .mr10{
     margin-right: 10px;
 }
+.mr32{
+    margin-right: 32px;
+}
 /* NAV SUPERIOR */
 .contenedor_nav{
     padding: 20px 40px;
@@ -157,29 +160,26 @@ a {
     position: absolute;
     right: 0;
     top: 0;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .cont-tex{
-    bottom: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    left: 7%;
     position: absolute;
-    top: 0;
+    bottom: 10%;
+    display: flex;
+    flex-direction:row;
+    justify-content:start;
+    left: 7%;
     width: 36%;
     z-index: 7;
+    overflow: hidden;
 }
-.log-tend{
-    margin-bottom: 3%;
-    min-height: 13.2vw;
-    position: relative;
-}
+
 .log-tend img{
-    width: 65%;
+    width: 75%;
 }
 .synopsis{
-    
     background-color: rgb(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -223,6 +223,30 @@ a {
     font-weight: 500;
     line-height: 2.4rem;
 }
+.text-animation{
+    padding-left: 32px;
+}
+.text-animation{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    animation: textanim 20s infinite alternate ease-in-out;
+}
+@keyframes textanim{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+    
+}
 /* SLIDER DE LAS TENDENCIAS FONDO */
 .bgimg{
     
@@ -233,7 +257,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: bgchange 20s linear infinite;
+    animation: bgchange 20s infinite alternate ease-in-out;
 }
 @keyframes bgchange{
     0% {background-image: url(../img/SLIDERPRIN/cruella.jpg);}
@@ -246,7 +270,7 @@ a {
     70% {background-image: url(../img/SLIDERPRIN/morbius.jpg);}
 
     75% {background-image: url(../img/SLIDERPRIN/juego-de-tronos.jpg);}
-    95% {background-image: url(../img/SLIDERPRIN/juego-de-tronos.jpg);}
+    100% {background-image: url(../img/SLIDERPRIN/juego-de-tronos.jpg);}
 }
 
 .menubot{

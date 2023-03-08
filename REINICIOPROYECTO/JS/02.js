@@ -49,3 +49,58 @@ let numero6 = numero3+numero4;
 
 console.log("suma:", numero5)
 console.log("suma:", numero6)
+
+
+let resultado10 = Math.random();
+
+console.log("Random:", resultado10);
+
+let resultado2 = Math.floor(Math.random()*30);
+
+console.log("Random:", resultado2);
+
+let diametro = 20;
+
+let area = Math.PI * Math.pow((diametro/2), 2);
+
+console.log("Area:", area);
+console.log("Area redondeada:",Math.round(area));
+
+let aleatorio2 = Math.random()+2;
+
+console.log("aleatorio2:", aleatorio2);
+
+let dado = Math.trunc( 1+ Math.random()*5);
+
+console.log("dado:", dado);
+
+let prenda1 = 120;
+let prenda2 = 85;
+let prenda3 = 24;
+
+let cuenta = prenda1 + prenda2 + prenda3;
+let cdescuento = cuenta - (cuenta*0.4);
+
+console.log("Cuenta total:", cdescuento);
+
+let meGusta = 0;
+// meGusta++;
+
+console.log("uso de incrementos", meGusta+=15);
+console.log("uso de incrementos", meGusta);
+
+let nombre = "Sergio";
+let email = "sbuendiaf@gmail.com";
+
+console.log("Nombre:", nombre);
+console.log("Email:", email);
+console.log("Nombre y Email:", nombre+ " " +email);
+console.log(`Nombre Cliente: ${nombre} Email: ${email}`);//ESTAMOS UTILIZANDO UN TEMPLATELITERAL QUE ENTRE OTRAS COSAS SIRVE PARA CONCATENAR, PRINCIPAL MENTE SIRVE PARA MEZCLAR TEXTO CON VARIABLES Y FUNCIONES
+
+let boolean1 = true
+let boolean2 = false
+let boolean3 = "true"
+
+console.log("tipo de boolenaos:",typeof boolean1);
+console.log("tipo de boolenaos:", typeof boolean2);
+console.log("tipo de boolenaos:",typeof boolean3);
