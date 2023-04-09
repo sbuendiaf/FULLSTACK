@@ -104,3 +104,4 @@ let boolean3 = "true"
 console.log("tipo de boolenaos:",typeof boolean1);
 console.log("tipo de boolenaos:", typeof boolean2);
 console.log("tipo de boolenaos:",typeof boolean3);
+

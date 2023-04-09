@@ -1,0 +1,27 @@
+
+{
+    "empleados" :[
+
+        {
+            "id":1,
+            "nombre":"Jose Manuel",
+            "puesto": "programador"
+        },
+        {
+            "id":2,
+            "nombre":"Andrea",
+            "puesto": "marketing"
+        },
+        {
+            "id":3,
+            "nombre":"Karen",
+            "puesto": "marketing"
+        },
+        {
+            "id":4,
+            "nombre":"Pedro",
+            "puesto": "Desarrollo videojuegos"
+        }
+
+    ]
+}
