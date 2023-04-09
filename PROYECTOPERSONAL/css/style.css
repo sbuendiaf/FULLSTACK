@@ -6,6 +6,9 @@ html {
     --blanco-letra: #f1f1f1;
     --rojo-pagina: rgb(192,52,38);
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     background:var(--background-color);
     font-family: small-caps 100%/200% serif;
@@ -172,7 +175,7 @@ h3{
     opacity: 1;
 }
 
-/*ANIMACIÓN ICOONOS SUPERIORES*/
+/*ANIMACIÓN ICONOS SUPERIORES*/
 
 .submenu a {
     position: relative; 

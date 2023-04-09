@@ -3,30 +3,8 @@
     --blanco-letra: #f1f1f1;
     --rojo-pagina: rgb(192, 52, 38);
 }
-.imgPop{
-    color: var(--blanco-letra);
-    position: relative;
-    height: 15%;
-    top:55%;
-    z-index: 11;
-}
-/* POPUP */
-.popupContent {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr, 1fr 1fr;
-    width: 90%;
-    gap: 1%;
-    padding: 2px 4%;
-}
-/* texto popup  */
-.popEmision{
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-.popSinopsis{
-    grid-column: 1/3;
-    grid-row: 2/3;
+::-webkit-scrollbar {
+    display: none;
 }
 
 .overlay {
@@ -48,7 +26,7 @@
 #popupBody {
     width: 50%;
     height: 80%;
-    padding-top: 2%;
+
     padding-bottom: 2%;
 
     border-radius: 15px;
@@ -62,7 +40,7 @@
 }
 
 .tmPopup {
-    height: 1000px;
+    width: 100%;
 }
 #cerrar {
     position: absolute; 
@@ -126,44 +104,43 @@
 
 #sec1 {
     width: 100%;
-    height: 45%;
+    height: 100%;
     overflow: hidden;
+    
 }
 
 .trailer video {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     width: 100%;
     border-radius:top 10px ; 
     z-index: 1;
+    border-bottom: solid 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: var(--rojo-pagina);
 }
-.gradient{
-    position: relative;
-    top: 60%;
+.imgPop{
+    color: var(--blanco-letra);
+    position: absolute;
+    width: 20vmax;
+    top:18vmax;
+    left: 2%;
+    z-index: 11;
+}
 
-    height: 14%;
-    background-image: linear-gradient(to top, rgb(34, 34, 34) 20%, rgba(0, 0, 0, 0) 50% );
-    z-index: 1;
-}
 /* BOTONES */
 .botonesPop{
-    width: 40%;
-    position: relative;
-    top: 60%;
+    width:20vmax;
+    position: absolute;
+    top: 25vmax;
+    left: 2%;
     z-index: 110;
     
     
 }
-.boton-playPop{
 
-    display: flex;
-    align-items: center;
-    margin: auto 10px;
-    z-index: 100;
-    
-    
-}
 .playPop{
     display: flex;
     background-color: rgba(255, 255, 255, 0.857);
@@ -181,4 +158,78 @@
     display: block;
     z-index: 110;
 
+}
+/* POPUP */
+.popupContent {
+
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    width: 90%;
+    gap: 10px;
+    padding: 0 4%;
+}
+/* texto popup  */
+.popEmision{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    
+}
+.popSinopsis{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.popReparto{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.temporadas{
+    margin-bottom: 0px;
+}
+.calificacion{
+    margin-top: 0px;
+    padding-top: 1px;
+    margin-bottom: 0px;
+}
+/*CAPITULOS*/
+.capitulos{
+    margin: 2vmax 2vmax;
+}
+.capitulo1{
+    display: flex;
+    margin: 1vmax 0;
+    border-bottom: solid 1px;
+    border-color: rgb(192, 52, 38 , 0.7);
+}
+.capitulos img{
+    height: 5vmax;
+    margin: 20px 10px;
+}
+.ncapitulo{
+    font-size: 3vmax;
+    margin: auto 2px auto 10px
+}
+.capText{
+    width: 65%;
+}
+.selectTemp{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.capTitulo{
+    font-size: 2vmax;
+    margin-bottom: 0;
+}
+#menu{
+    
+    height: 2vmax;
+    background-color: transparent;
+    color: var(--blanco-letra);
+    border-color: var(--rojo-pagina);
+    
+}
+.desplegable{
+    background-color: transparent;
+    color: var(--blanco-letra);
+    border-color: var(--rojo-pagina);
 }
