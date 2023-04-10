@@ -415,6 +415,7 @@ h3{
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
+    
 
 }
 .elemento{
@@ -427,14 +428,16 @@ h3{
     border-radius: 10px;
 
 }
-.elemento:hover{
-    margin: 0 40px;
+.elemento img:hover{
+    margin: 0 2vmax;
     transform: scale(1.2);
-
+    border: solid 1px;
+    border-color: var(--rojo-pagina);
 }
 .elemento a{
     text-decoration: none;
-    background: var(--rojo-pagina);
+    border-bottom:solid 5px;
+    border-bottom-color: var(--rojo-pagina);
     text-align: center;
     border-radius: 10px;
 
@@ -502,9 +505,6 @@ h3{
     .carrusel{
     margin-top: 10px;
     margin-bottom: 20px;
-    }
-    .elemento:hover{
-    margin: 0 40px;
     }
     
 

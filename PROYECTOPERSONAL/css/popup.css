@@ -226,10 +226,12 @@
     background-color: transparent;
     color: var(--blanco-letra);
     border-color: var(--rojo-pagina);
+    border-radius: 5px;
     
 }
 .desplegable{
     background-color: transparent;
     color: var(--blanco-letra);
     border-color: var(--rojo-pagina);
+    border-radius: 5px;
 }
