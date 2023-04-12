@@ -424,7 +424,7 @@ h3{
     width: auto;
     height: auto;
     padding: 20px 2px;
-    transition: 250ms all;
+    transition: 0.5s all;
     border-radius: 10px;
 
 }
@@ -436,7 +436,7 @@ h3{
 }
 .elemento a{
     text-decoration: none;
-    border-bottom:solid 5px;
+    border-bottom:solid 3px;
     border-bottom-color: var(--rojo-pagina);
     text-align: center;
     border-radius: 10px;
@@ -444,10 +444,127 @@ h3{
 
 }
 .elemento img{
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    transition: 0.5s all;
+}
+/* GALERIA EXPANDIDA */
+.galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box{
+    position: relative;
+    width: 22vw;
+    height: 45vmax;
+    margin: 10px 0vh;
+
+    background: url(../img/galeria/luther.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2){
+    background: url(../img/galeria/havoc.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3){
+    background: url(../img/galeria/china.webp);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4){
+    background: url(../img/galeria/cielo.webp);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:hover{
+    width: 30vw;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.img-box a{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+/* CUADRICULA */
+.cuadricula{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.filaCuadricula1{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+.filaCuadricula2{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+.filaCuadricula3{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+}
+.cuadricula img{
+    width: 300px;
+    margin: 5px;
+    transition: all 0.5s;
+    
+}
+.cuadricula img:hover{
+    z-index: 2;
+    transform: scale(1.2);
+    
+}
+.exclusivo{
+    padding-left: 0;
 }
 
+/* FOOTER */
 
+.contenedorFooter{
+    border-top: solid 1px;
+    border-color: rgba(255, 255, 255, 0.5 );
+    margin:10px;
+    padding: 20px 10%;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+.redes div{
+    margin: 5px;
+    padding: 10px;
+}
+.redes div:first-child{
+    padding: 10px 10px 10px 0;
+}
+.redes svg:hover{
+    stroke: var(--rojo-pagina)!important;
+}
+.estructuraFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.estructuraFooter div{
+    display: flex;
+    flex-direction: column;
+}
+.estructuraFooter a{
+    padding: 5px;
+    margin: 5px;
+    color:rgba(255, 255, 255, 0.7 ) ;
+    font-size: 1vmax;
+}
+.estructuraFooter a:hover{
+    color: var(--rojo-pagina);
+}
 /* Mediakeris responsive */
 @media (min-width:1101px){
     .botones{
