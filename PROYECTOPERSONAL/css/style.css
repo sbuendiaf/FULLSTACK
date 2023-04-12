@@ -492,26 +492,27 @@ h3{
 }
 /* CUADRICULA */
 .cuadricula{
+    width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 .filaCuadricula1{
     display: flex;
     flex-direction:row ;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .filaCuadricula2{
     display: flex;
     flex-direction:row ;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .filaCuadricula3{
     display: flex;
     flex-direction:row ;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .cuadricula img{
-    width: 300px;
+    width: 17vw;
     margin: 5px;
     transition: all 0.5s;
     
@@ -521,9 +522,7 @@ h3{
     transform: scale(1.2);
     
 }
-.exclusivo{
-    padding-left: 0;
-}
+
 
 /* FOOTER */
 
@@ -566,6 +565,15 @@ h3{
     color: var(--rojo-pagina);
 }
 /* Mediakeris responsive */
+@media (min-width:2101px){
+    .cuadricula img{
+        height: auto;
+        width: 17%;
+    }
+    .carrusel img{
+        width: 100%;
+    }
+}
 @media (min-width:1101px){
     .botones{
         grid-template-columns: 1fr 1fr;
@@ -617,6 +625,27 @@ h3{
         z-index: 7;
         overflow: hidden;
     }
+    .cuadricula img{
+        width: 18%;
+        margin: 0;
+        padding: 0;
+    }
+    .filaCuadricula1{
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .filaCuadricula2{
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .filaCuadricula3{
+        justify-content:center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
 }
 @media (min-width:822px){
     .carrusel{
@@ -655,10 +684,30 @@ h3{
         margin-top: 5px;
         margin-bottom: 10px;
     }
-        .elemento:hover{
+    .elemento:hover{
     margin: 0 40px;
     }
-    
+    .cuadricula img{
+        width: 18%;
+        margin: 0;
+        padding: 0;
+    }
+    .filaCuadricula1{
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .filaCuadricula2{
+        justify-content: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .filaCuadricula3{
+        justify-content:center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
 
 }
 @media (max-width:550px){
@@ -679,4 +728,28 @@ h3{
         .elemento:hover{
     margin: 0 20px;
     }
+    .cuadricula img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .filaCuadricula1{
+        display: block;
+        justify-content:space-around;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    .filaCuadricula2{
+        display: block;
+        justify-content:space-around;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .filaCuadricula3{
+        display: block;
+        justify-content:space-around;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
